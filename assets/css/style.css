@@ -9,4 +9,168 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Sora", "San-serif";
+  height: 1000px;
+}
+
+/* Common */
+a {
+  text-decoration: none;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 46px;
+  border-radius: 30px;
+  background: #2e80ce;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.667;
+}
+
+/* Header */
+#header {
+  height: 100vh;
+  background-color: #10375c;
+}
+
+/* Navbar */
+#nav {
+  padding-top: 30px;
+}
+
+#nav .content {
+  display: flex;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  margin-left: 318px;
+  gap: 42px;
+  position: relative;
+}
+
+.nav__list .item {
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 1.75;
+}
+
+.nav__list::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #fff;
+  position: absolute;
+  left: -14px;
+  top: 11px;
+}
+
+.nav__list .item:first-child {
+  color: #fff;
+  font-weight: 400;
+}
+
+#nav .action {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+#nav .action .sign-in {
+  color: #c9d2da;
+  font-size: 1.6rem;
+  font-weight: 200;
+  line-height: 1.75;
+}
+
+#nav .action .sign-up {
+  min-width: 104px;
+  padding: 8px 16px;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+  text-align: center;
+  margin-left: 28px;
+}
+
+/* Hero */
+.hero {
+  margin-top: 136px;
+}
+
+.hero .content {
+  display: flex;
+}
+
+.hero__info {
+  width: 517px;
+}
+
+.hero__info .title {
+  color: #fff;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 1.143;
+  letter-spacing: -1.4px;
+}
+
+.hero__info .desc {
+  color: #c9d2da;
+  font-size: 1.8rem;
+  font-weight: 200;
+  line-height: 1.667;
+  margin-top: 22px;
+}
+
+.hero .cta {
+  margin-top: 38px;
+}
+
+.cta__phone {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.667;
+  margin-left: 38px;
+}
+
+.hero__img {
+  margin-left: 113px;
+  display: flex;
+  position: relative;
+}
+
+.hero__img img:first-child {
+  width: 330px;
+  height: 540px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: -60px;
+}
+
+.hero__img img:last-child {
+  width: 210px;
+  height: 410px;
+  border-radius: 0px 6px 6px 0px;
+  position: absolute;
+  top: 5px;
+  left: 324px;
 }
