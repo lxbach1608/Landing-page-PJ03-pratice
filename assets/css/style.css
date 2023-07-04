@@ -44,12 +44,19 @@ a {
   line-height: 1.667;
 }
 
+.next {
+}
+
 .right-block {
   margin-left: 130px;
 }
 
 .mt18 {
   margin-top: 18px;
+}
+
+.mt38 {
+  margin-top: 38px;
 }
 
 /* Header */
@@ -358,6 +365,8 @@ a {
 
 .addition__body .left-block {
   position: relative;
+  width: 570px;
+  height: 491px;
 }
 
 .fisrt-img {
@@ -392,4 +401,58 @@ a {
 
 .addition__body .right-block {
   margin-left: 188px;
+}
+
+/* Dentist */
+.dentist {
+  text-align: center;
+}
+
+.dentist__title {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.dentist__list {
+  margin-top: 70px;
+  display: flex;
+  gap: 34px;
+}
+
+.dentist__list .item {
+  width: calc(100% / 4);
+}
+
+.bg__avt {
+  border-radius: 6px;
+  height: 318px;
+  background: #eaf6ff;
+  /* position: relative; */
+}
+
+.item__avt {
+  height: 290px;
+  object-fit: cover;
+  /* position: absolute;
+  bottom: 0;
+  right: 4px; */
+  margin-top: 28px;
+}
+
+.item__name {
+  color: #10375c;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75;
+  margin-top: 12px;
+}
+
+.item__info {
+  color: #575f66;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.86;
 }
