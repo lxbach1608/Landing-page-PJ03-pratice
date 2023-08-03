@@ -127,3 +127,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+a,
+button {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+}

@@ -85,11 +85,10 @@
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Embed fonts -->
-    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lato:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lato:wght@700&family=Roboto:wght@400;500;700&family=Sora:wght@100;300;400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -101,48 +100,58 @@
   </head>
   <body>
     <!-- Header -->
-    <header id="header">
-      <!-- Nav -->
-      <nav id="nav">
-        <div class="content">
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
           <img
             src="./assets/img/Logo-header.svg"
             alt="shine logo"
             class="nav__logo"
           />
-          <ul class="nav__list">
-            <li class="item">Home</li>
-            <li class="item">Services</li>
-            <li class="item">About</li>
-            <li class="item">Doctors</li>
-            <span class="dot"></span>
-          </ul>
+          <nav class="navbar">
+            <ul class="nav__list">
+              <li class="nav__item nav__item--active"><a href="">Home</a></li>
+              <li class="nav__item"><a href="">Services</a></li>
+              <li class="nav__item"><a href="">About</a></li>
+              <li class="nav__item"><a href="">Doctors</a></li>
+            </ul>
+          </nav>
           <div class="action">
-            <a href="" class="sign-in">Log In</a>
-            <a href="" class="btn sign-up">Sign Up</a>
+            <a href="" class="action__sign-in">Log In</a>
+            <a href="" class="btn action__sign-up">Sign Up</a>
           </div>
         </div>
-      </nav>
 
-      <!-- Hero -->
-      <div class="hero">
-        <div class="content">
-          <div class="hero__info">
-            <h1 class="title">Exceptional dental care for all ages.</h1>
-            <p class="desc">
+        <!-- Hero -->
+        <section class="hero">
+          <div class="hero__content">
+            <h1 class="hero__heading">Exceptional dental care for all ages.</h1>
+            <p class="hero__desc">
               Exceptional dental care for all ages. Your great smile begins with
               a great dentist.
             </p>
-            <div class="row cta">
+            <div class="hero__row">
               <a href="" class="btn">Book Online</a>
-              <p class="cta__phone">or call (123) 456-7890</p>
+              <span class="hero__phone">or call (123) 456-7890</span>
             </div>
           </div>
-          <div class="hero__img">
-            <img src="./assets/img/hero-img.svg" alt="hero img" />
-            <img src="./assets/img/hero-img2.svg" alt="hero img" />
+
+          <!-- Hero media -->
+          <div class="hero__media">
+            <figure class="hero__images">
+              <img
+                src="./assets/img/hero-img1.svg"
+                alt="dental"
+                class="hero__img"
+              />
+              <img
+                src="./assets/img/hero-img2.svg"
+                alt="dental"
+                class="hero__img"
+              />
+            </figure>
           </div>
-        </div>
+        </section>
       </div>
     </header>
 
