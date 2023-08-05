@@ -44,6 +44,24 @@ a {
   font-weight: 400;
 }
 
+.section-heading {
+  color: #10375c;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+.section-desc {
+  color: #575f66;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 1.667;
+  margin-top: 18px;
+  text-align: center;
+}
+
 .right-block {
   margin-left: 130px;
 }
@@ -120,9 +138,9 @@ a {
   padding: 8px 16px;
   color: #fff;
   font-weight: 400;
-  text-align: center;
   margin-left: 28px;
   line-height: 1.75;
+  font-size: 1.6rem;
 }
 
 /* -----------------------> Hero */
@@ -193,15 +211,15 @@ a {
 }
 
 /*================================ Main ==========================*/
-#main {
+.main {
 }
 
-#main .content {
+.main .content {
   width: 1170px;
   margin: 170px auto;
 }
 
-#main .container {
+.main .container {
   width: 1170px;
   margin: 170px auto;
 }
@@ -210,162 +228,157 @@ a {
 .service {
 }
 
-.service__title {
-  color: #10375c;
-  font-size: 5rem;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -1px;
-  text-align: center;
-}
-
-.service__desc {
-  color: #575f66;
-  font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 1.667;
-  margin-top: 18px;
-  text-align: center;
-}
-
-.detail-service {
+.service-row {
   display: flex;
   margin-top: 70px;
   align-items: center;
+  justify-content: space-between;
 }
 
-.detail-service__img {
+.service__list {
+}
+
+.service-img {
   width: 570px;
   height: 570px;
   object-fit: cover;
+  border-radius: 12px;
 }
 
-.right-block .item {
+.service-item {
+  max-width: 470px;
+  min-height: 128px;
   display: flex;
-  padding: 21px 22px;
+  align-items: center;
 }
 
-.service .item.item--active {
+.service-item:hover {
   border-radius: 10px;
-  background: #fff;
   box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.25s;
 }
 
-.item__img {
+.service-item:hover svg {
+  color: #fff;
+  transition: 0.25s;
+}
+
+.service-item:hover .service-item__icon {
+  background-color: #2e80ce;
+  transition: 0.25s;
+}
+
+.service-item__icon {
   width: 60px;
   height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eff6fd;
+  margin-right: 19px;
+  margin-left: 22px;
 }
 
-.item__content {
-  margin-left: 19px;
+.service-item__icon svg {
+  transform: translateY(5px);
 }
 
-.item__content__title {
+.service-item__heading {
   color: #10375c;
   font-size: 1.8rem;
   font-weight: 600;
 }
 
-.item__content__desc {
+.service-item__desc {
   color: #575f66;
   font-size: 1.6rem;
   font-weight: 300;
-  line-height: 1.75;
+  line-height: 28px; /* 175% */
   margin-top: 8px;
 }
 
-.service__btn {
-  color: #fff;
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 1.667;
-  margin-top: 55px;
-  width: 205px;
-  text-align: center;
-}
-
-/* Tutorial */
+/*================================ Tutorial ==========================*/
 .tutorial {
   background: #f6fbff;
 }
 
-.tutorial .content {
-  padding: 100px 0;
+.tutorial .section-heading {
+  text-align: start;
+  padding-top: 100px;
 }
 
-.tutorial__title {
-  color: #10375c;
-  font-size: 5rem;
-  font-weight: 600;
-  line-height: 1.2;
-  letter-spacing: -1px;
+.tutorial .section-desc {
+  text-align: start;
+  padding-top: 18px;
+  width: 468px;
 }
 
-.tutorial__desc {
-  color: #575f66;
-  font-size: 1.8rem;
-  font-weight: 300;
-  line-height: 1.667;
-  margin-top: 8px;
+.tutorial__list {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
 }
 
-.steps {
-  margin-top: 86px;
-  margin-left: -15px;
-  margin-right: -15px;
-}
-
-.steps::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-.steps .item {
+.tutorial-item {
   width: 370px;
-  padding: 16px;
-  border-radius: 4px;
-  background: #eaf6ff;
-  float: left;
-  margin: 0 15px;
-}
-
-.steps .item.item--active {
-  background-color: #2e80ce;
-  margin-top: -16px;
-}
-
-.item__body {
-  padding: 43px 42px;
+  height: 402px;
   background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 16px solid #eaf6ff;
   border-radius: 4px;
 }
 
-.item__title {
+.tutorial-item:hover {
+  border-color: #2e80ce;
+  transform: translateY(-16px);
+  transition: 0.25s;
+}
+
+.tutorial-item:hover .tutorial-item__link {
+  color: #2e80ce;
+}
+
+.tutorial-item__body {
+  width: 254px;
+}
+
+.tutorial-item__icon {
+  width: 72px;
+  height: 72px;
+  flex-shrink: 0;
+}
+
+.tutorial-item__heading {
   color: #10375c;
   font-size: 2.6rem;
   font-weight: 600;
-  line-height: 1.38;
+  line-height: 36px;
   margin-top: 18px;
 }
 
-.item__desc {
+.tutorial-item__desc {
   color: #575f66;
   font-size: 1.6rem;
   font-weight: 300;
-  line-height: 1.75;
+  line-height: 28px;
   margin-top: 28px;
+  width: 254px;
 }
 
-.item__link {
+.tutorial-item__link {
   color: #575f66;
   font-size: 1.6rem;
   font-weight: 300;
-  line-height: 1.75;
+  line-height: 28px;
   margin-top: 18px;
 }
 
-/* Addition */
+/*================================ Additional ==========================*/
 .addition__body {
   display: flex;
   align-items: center;
